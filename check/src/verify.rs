@@ -13,9 +13,9 @@ use ethers::types::H256;
 use serde::{Deserialize, Serialize};
 
 use crate::{
-    check,
+    check, CheckConfig, VerifyConfig,
     deploy::{self, extract_compressed_wasm, extract_program_evm_deployment_prelude},
-    project, CheckConfig, VerifyConfig,
+    project,
 };
 use cargo_stylus_util::{color::Color, sys};
 
