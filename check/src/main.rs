@@ -1,8 +1,7 @@
 // Copyright 2023-2024, Offchain Labs, Inc.
 // For licensing, see https://github.com/OffchainLabs/cargo-stylus/blob/main/licenses/COPYRIGHT.md
 
-use clap::{ArgGroup, Args, Parser};
-use ethers::types::{H160, U256};
+use clap::Parser;
 use eyre::{eyre, Context, Result};
 use std::path::PathBuf;
 use tokio::runtime::Builder;
