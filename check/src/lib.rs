@@ -98,9 +98,9 @@ pub struct DeployConfig {
 #[derive(Args, Clone, Debug)]
 pub struct VerifyConfig {
     #[command(flatten)]
-    common_cfg: CommonConfig,
+    pub common_cfg: CommonConfig,
 
     /// Hash of the deployment transaction.
     #[arg(long)]
-    deployment_tx: String,
+    pub deployment_tx: String,
 }
