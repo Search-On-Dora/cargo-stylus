@@ -19,23 +19,23 @@ pub mod wallet;
 pub struct CommonConfig {
     /// Arbitrum RPC endpoint.
     #[arg(short, long, default_value = "https://sepolia-rollup.arbitrum.io/rpc")]
-    endpoint: String,
+    pub endpoint: String,
     /// Whether to use stable Rust.
     #[arg(long)]
-    rust_stable: bool,
+    pub rust_stable: bool,
     /// Whether to print debug info.
     #[arg(long)]
-    verbose: bool,
+    pub verbose: bool,
     /// The path to source files to include in the project hash, which
     /// is included in the contract deployment init code transaction
     /// to be used for verification of deployment integrity.
     /// If not provided, all .rs files and Cargo.toml and Cargo.lock files
     /// in project's directory tree are included.
     #[arg(long)]
-    source_files_for_project_hash: Vec<String>,
+    pub source_files_for_project_hash: Vec<String>,
     #[arg(long)]
     /// Optional max fee per gas in gwei units.
-    max_fee_per_gas_gwei: Option<U256>,
+    pub max_fee_per_gas_gwei: Option<U256>,
 }
 
 
